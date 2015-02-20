@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+
+    <?php
+    $myFile = "random.txt";
+    $fh = fopen($myFile, 'r');
+    $theData = fread($fh, 1);
+    fclose($fh);
+    echo $theData;
+    ?>     
+
+</body>
+</html>
